@@ -38,11 +38,13 @@ public class AdvantageOutline extends ListOutline implements Incrementable {
     @Localize(locale = "de", value = "Stufe erhöhen")
     @Localize(locale = "ru", value = "Повысить уровень")
     @Localize(locale = "es", value = "Subir Nivel")
+    @Localize(locale = "pt_BR", value = "Aumentar nível")
     private static String INCREMENT;
     @Localize("Decrement Level")
     @Localize(locale = "de", value = "Stufe verringen")
     @Localize(locale = "ru", value = "Понизить уровень")
     @Localize(locale = "es", value = "Bajar Nivel")
+    @Localize(locale = "pt_BR", value = "Diminuir nível")
     private static String DECREMENT;
 
     static {

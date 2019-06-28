@@ -50,6 +50,7 @@ public class Advantage extends ListRow implements HasSourceReference, Switchable
     @Localize(locale = "de", value = "Vorteil")
     @Localize(locale = "ru", value = "Преимущество")
     @Localize(locale = "es", value = "Ventaja")
+    @Localize(locale = "pt_BR", value = "Vantagem")
     private static String DEFAULT_NAME;
 
     static {

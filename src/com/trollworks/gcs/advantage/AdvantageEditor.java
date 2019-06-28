@@ -63,25 +63,31 @@ public class AdvantageEditor extends RowEditor<Advantage> implements ActionListe
     @Localize(locale = "de", value = "Name")
     @Localize(locale = "ru", value = "Название")
     @Localize(locale = "es", value = "Nombre")
+    @Localize(locale = "pt_BR", value = "Nome")
     private static String NAME;
     @Localize("The name of the advantage, without any notes")
     @Localize(locale = "de", value = "Der Name des Vorteils ohne Anmerkungen")
     @Localize(locale = "ru", value = "Название преимущества без заметок")
     @Localize(locale = "es", value = "Nombre de la ventaja, sin anotaciones")
+    @Localize(locale = "pt_BR", value = "Nome da vantagem, sem notas")
     private static String NAME_TOOLTIP;
     @Localize("Round Down")
+    @Localize(locale = "pt_BR", value = "Arredondado para baixo")
     private static String SHOULD_ROUND_COST_DOWN_TITLE;
     @Localize("Round point costs down if selected, round them up if not (most things in GURPS round up)")
+    @Localize(locale = "pt_BR", value = "O custo seráarredondado para baixo se selecionado, senão será arredondado para cima (a maioria das coisas no GURPS é arredondada para cima)")
     private static String SHOULD_ROUND_COST_DOWN_TOOLTIP;
     @Localize("The name field may not be empty")
     @Localize(locale = "de", value = "Der Name darf nicht leer sein")
     @Localize(locale = "ru", value = "Поле \"Название\" не может быть пустым")
     @Localize(locale = "es", value = "El campo Nombre no puede estar vacio")
+    @Localize(locale = "pt_BR", value = "O campo nome não pode estar vazio")
     private static String NAME_CANNOT_BE_EMPTY;
     @Localize("Self-Control Roll")
     @Localize(locale = "de", value = "Selbstbeherrschungs-Probe")
     @Localize(locale = "ru", value = "Бросок самоконтроля")
     @Localize(locale = "es", value = "Tirada de autocontrol")
+    @Localize(locale = "pt_BR", value = "Rolagem de autocontrole")
     private static String CR;
     @Localize("Adjustments that are applied due to Self-Control Roll limitations")
     @Localize(locale = "de",
@@ -90,31 +96,37 @@ public class AdvantageEditor extends RowEditor<Advantage> implements ActionListe
               value = "Настройки, которые применяются для ограничений бросков СамоКонтроля (СК)")
     @Localize(locale = "es",
               value = "Modificadores que se aplican debido a las limitaciones de la tirada de autocontrol")
+    @Localize(locale = "pt_BR", value = "Ajustes que são aplicados às limitações de rolagens de Autocontrole")
     private static String CR_ADJ_TOOLTIP;
     @Localize("Total")
     @Localize(locale = "de", value = "Gesamt")
     @Localize(locale = "ru", value = "Всего")
     @Localize(locale = "es", value = "Total")
+    @Localize(locale = "pt_BR", value = "Total")
     private static String TOTAL_POINTS;
     @Localize("The total point cost of this advantage")
     @Localize(locale = "de", value = "Die Gesamtkosten dieses Vortiels")
     @Localize(locale = "ru", value = "Сумарная стоимость преимущества")
     @Localize(locale = "es", value = "Coste total de la ventaja")
+    @Localize(locale = "pt_BR", value = "Custo total da vantagem")
     private static String TOTAL_POINTS_TOOLTIP;
     @Localize("Base Point Cost")
     @Localize(locale = "de", value = "Grundkosten")
     @Localize(locale = "ru", value = "Базовая стоимость")
     @Localize(locale = "es", value = "Coste base")
+    @Localize(locale = "pt_BR", value = "Custo Base")
     private static String BASE_POINTS;
     @Localize("The base point cost of this advantage")
     @Localize(locale = "de", value = "Die Grundkosten dieses Vorteils")
     @Localize(locale = "ru", value = "Базовая стоимость преимущества")
     @Localize(locale = "es", value = "Coste base en puentos de la ventaja")
+    @Localize(locale = "pt_BR", value = "Custo base da vantagem")
     private static String BASE_POINTS_TOOLTIP;
     @Localize("Point Cost Per Level")
     @Localize(locale = "de", value = "Kosten pro Stufe")
     @Localize(locale = "ru", value = "Количество очков за уровень")
     @Localize(locale = "es", value = "Coste por nivel")
+    @Localize(locale = "pt_BR", value = "Custo por nível")
     private static String LEVEL_POINTS;
     @Localize("The per level cost of this advantage. If this is set to zero and there is a value other than zero in the level field, then the value in the base points field will be used")
     @Localize(locale = "de",
@@ -123,23 +135,29 @@ public class AdvantageEditor extends RowEditor<Advantage> implements ActionListe
               value = "Стоимость одного уровня преимущества. Если этот параметр установлен в ноль и есть значение, отличное от нуля в поле Уровень, то будет использоваться значение из поля Базовая стоимость")
     @Localize(locale = "es",
               value = "Coste por nivel de la ventaja. Si está a cero pero el campo por nivel no, entonces se usa el coste base en su lugar")
+    @Localize(locale = "pt_BR",
+              value = "O custo por nível dessa vantagem. Se for definido como zero e houver um valor diferente de zero no campo de nível, o valor no campo de pontos de base será usado")
     private static String LEVEL_POINTS_TOOLTIP;
     @Localize("Level")
     @Localize(locale = "de", value = "Stufe")
     @Localize(locale = "ru", value = "Уровень")
     @Localize(locale = "es", value = "Nivel")
+    @Localize(locale = "pt_BR", value = "Nível")
     private static String LEVEL;
     @Localize("The level of this advantage")
     @Localize(locale = "de", value = "Die Stufe dieses Vorteils")
     @Localize(locale = "ru", value = "Уровень преимущества")
     @Localize(locale = "es", value = "Nivel de la ventaja")
+    @Localize(locale = "pt_BR", value = "Nível da vantagem")
     private static String LEVEL_TOOLTIP;
     @Localize("Add a half Level")
+    @Localize(locale = "pt_BR", value = "Adicionar metade do nível")
     private static String HALF_LEVEL_TOOLTIP;
     @Localize("Categories")
     @Localize(locale = "de", value = "Kategorie")
     @Localize(locale = "ru", value = "Категории")
     @Localize(locale = "es", value = "Categoría")
+    @Localize(locale = "pt_BR", value = "Categorias")
     private static String CATEGORIES;
     @Localize("The category or categories the advantage belongs to (separate multiple categories with a comma)")
     @Localize(locale = "de",
@@ -148,11 +166,13 @@ public class AdvantageEditor extends RowEditor<Advantage> implements ActionListe
               value = "Категория или категории, к которым относится преимущество (перечислить через запятую)")
     @Localize(locale = "es",
               value = "Categoría o categorías a las que pertenece la ventaja (múltiples categorías se separan con una coma)")
+    @Localize(locale = "pt_BR", value = "Categoria ou categorias da vantagem (multiplas categorias estão separadas por vírgula)")
     private static String CATEGORIES_TOOLTIP;
     @Localize("Notes")
     @Localize(locale = "de", value = "Anmerkungen")
     @Localize(locale = "ru", value = "Заметка")
     @Localize(locale = "es", value = "Notas")
+    @Localize(locale = "pt_BR", value = "Notas")
     private static String NOTES;
     @Localize("Any notes that you would like to show up in the list along with this advantage")
     @Localize(locale = "de",
@@ -160,78 +180,95 @@ public class AdvantageEditor extends RowEditor<Advantage> implements ActionListe
     @Localize(locale = "ru", value = "Заметки, которые показываются в списке рядом с преимуществом")
     @Localize(locale = "es",
               value = "Cualquier nota que desees mostrar en la lista de esta ventaja")
+    @Localize(locale = "pt_BR", value = "Qualquer nota que queira mostrar na lista desta vantagem")
     private static String NOTES_TOOLTIP;
     @Localize("Type")
     @Localize(locale = "de", value = "Typ")
     @Localize(locale = "ru", value = "Тип")
     @Localize(locale = "es", value = "Tipo")
+    @Localize(locale = "pt_BR", value = "Tipo")
     private static String TYPE;
     @Localize("The type of advantage this is")
     @Localize(locale = "de", value = "Der Typ dieses Vorteils")
     @Localize(locale = "ru", value = "Тип этого преимущества")
     @Localize(locale = "es", value = "Tipo de ventaja que es")
+    @Localize(locale = "pt_BR", value = "O tipo da vantagem é")
     private static String TYPE_TOOLTIP;
     @Localize("Container Type")
     @Localize(locale = "de", value = "Container-Typ")
     @Localize(locale = "ru", value = "Тип контейнера")
     @Localize(locale = "es", value = "Tipo de contenedor")
+    @Localize(locale = "pt_BR", value = "Tipo de container")
     private static String CONTAINER_TYPE;
     @Localize("The type of container this is")
     @Localize(locale = "de", value = "Der Container-Typ dieses Vorteils")
     @Localize(locale = "ru", value = "Тип этого контейнера")
     @Localize(locale = "es", value = "Tipo de contenedor que es")
+    @Localize(locale = "pt_BR", value = "O tipo de container é")
     private static String CONTAINER_TYPE_TOOLTIP;
     @Localize("Ref")
     @Localize(locale = "de", value = "Seitenangabe")
     @Localize(locale = "ru", value = "Ссыл")
     @Localize(locale = "es", value = "Ref")
+    @Localize(locale = "pt_BR", value = "Ref")
     private static String REFERENCE;
     @Localize("Page Reference")
     @Localize(locale = "de",
               value = "Eine Referenz auf das Buch und die Seite, auf der dieser Vorteil beschrieben wird (z.B. B22 würde auf \"Basic Set\" Seite 22 verweisen)")
     @Localize(locale = "ru", value = "Ссылка на страницу")
     @Localize(locale = "es", value = "Página de referencia")
+    @Localize(locale = "pt_BR", value = "Página de referência")
     private static String REFERENCE_TOOLTIP;
     @Localize("Has No Levels")
     @Localize(locale = "de", value = "Hat keine Stufen")
     @Localize(locale = "ru", value = "Не имеет уровни")
     @Localize(locale = "es", value = "Sin niveles")
+    @Localize(locale = "pt_BR", value = "Sem níveis")
     private static String NO_LEVELS;
     @Localize("Has Levels")
     @Localize(locale = "de", value = "Hat Stufen")
     @Localize(locale = "ru", value = "Имеет уровни")
     @Localize(locale = "es", value = "Tiene niveles")
+    @Localize(locale = "pt_BR", value = "Tem níveis")
     private static String HAS_LEVELS;
     @Localize("Has Half Levels")
+    @Localize(locale = "pt_BR", value = "Tem metade de níveis")
     private static String HAS_HALF_LEVELS;
     @Localize("Mental")
     @Localize(locale = "de", value = "Mental")
     @Localize(locale = "ru", value = "Ментальный")
     @Localize(locale = "es", value = "Mental")
+    @Localize(locale = "pt_BR", value = "Mental")
     private static String MENTAL;
     @Localize("Physical")
     @Localize(locale = "de", value = "Physisch")
     @Localize(locale = "ru", value = "Физическая")
     @Localize(locale = "es", value = "Física")
+    @Localize(locale = "pt_BR", value = "Física")
     private static String PHYSICAL;
     @Localize("Social")
     @Localize(locale = "de", value = "Sozial")
     @Localize(locale = "ru", value = "Социальная")
     @Localize(locale = "es", value = "Social")
+    @Localize(locale = "pt_BR", value = "Social")
     private static String SOCIAL;
     @Localize("Exotic")
     @Localize(locale = "de", value = "Exotisch")
     @Localize(locale = "ru", value = "Экзотические")
     @Localize(locale = "es", value = "Exótica")
+    @Localize(locale = "pt_BR", value = "Exótica")
     private static String EXOTIC;
     @Localize("Supernatural")
     @Localize(locale = "de", value = "Übernatürlich")
     @Localize(locale = "ru", value = "Сверхъестественное")
     @Localize(locale = "es", value = "Sobrenatural")
+    @Localize(locale = "pt_BR", value = "Sobrenatural")
     private static String SUPERNATURAL;
     @Localize("Enabled")
+    @Localize(locale = "pt_BR", value = "Habilitado")
     private static String ENABLED_TITLE;
     @Localize("If checked, this advantage is treated normally. If not checked, it is treated as if it didn't exist.")
+    @Localize(locale = "pt_BR", value = "Se marcado esta vantagem é tratada normalmente. Se não marcado, esta vantagem é tratada como se não existisse.")
     private static String ENABLED_TOOLTIP;
 
     static {

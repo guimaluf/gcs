@@ -35,23 +35,28 @@ public class AboutPanel extends JPanel {
     @Localize(locale = "de", value = "Version %s")
     @Localize(locale = "ru", value = "Версия %s")
     @Localize(locale = "es", value = "Versión %s")
+    @Localize(locale = "pt_BR", value = "Versão %s")
     private static String VERSION_FORMAT;
     @Localize("%s %s\n%s Architecture\nJava %s")
     @Localize(locale = "de", value = "%s %s\n%s-Architektur\nJava %s")
     @Localize(locale = "ru", value = "%s %s\n%s Архитектура\nJava %s")
     @Localize(locale = "es", value = "%s %s\n%s Arquitectura\nJava %s")
+    @Localize(locale = "pt_BR", value = "%s %s\n%s Arquitetura\nJava %s")
     private static String PLATFORM_FORMAT;
     @Localize("GURPS is a trademark of Steve Jackson Games, used by permission. All rights reserved.\nThis product includes copyrighted material from the GURPS game, which is used by permission of Steve Jackson Games.\nThe iText Library is licensed under LGPL 2.1 by Bruno Lowagie and Paulo Soares.\nThe Trove Library is licensed under LGPL 2.1 by Eric D. Friedman and Rob Eden.\nThe PDFBox and FontBox libraries are licensed under the Apache License v2 by the Apache Software Foundation.")
+    @Localize(locale = "pt_BR", value = "GURPS é uma marca registrada da Steve Jackson Games, usado com permissão. Todos os direitos reservados.\nEste produto inclui material protegido por copyrigth do GURPS, estessão usados com permissão pela Steve Jackson Games.\nA biblioteca iText é licenciada sobre a LGPL 2.1 por Bruno Lowagie e Paulo Soares.\nA biblioteca Trove é licenciada sobre a LGPL 2,1 por Eric D. Friedman e Rob Eden.\nAs bibliotecas PDFBox e FontBox são licenciadas sobre a Licensa Apache v2 pela Apache Software Foundation.")
     private static String LICENSES;
     @Localize("Unknown build date")
     @Localize(locale = "de", value = "Unbekanntes Erstellungsdatum")
     @Localize(locale = "ru", value = "Неизвестная дата сборки")
     @Localize(locale = "es", value = "Fecha de compilación desconocida")
+    @Localize(locale = "pt_BR", value = "Data de compilação desconhecida")
     private static String UNKNOWN_BUILD_DATE;
     @Localize("Development Version")
     @Localize(locale = "de", value = "Entwicklungsversion")
     @Localize(locale = "ru", value = "Разрабатываемая версия")
     @Localize(locale = "es", value = "Versión de Desarrollo")
+    @Localize(locale = "pt_BR", value = "Versão de desenvolvimento")
     private static String DEVELOPMENT;
 
     static {

@@ -136,6 +136,7 @@ public enum SelfControlRoll {
     @Localize(locale = "de", value = "SBP: entf. (kann nicht widerstehen)")
     @Localize(locale = "ru", value = "СК: - (не может сопротивляться)")
     @Localize(locale = "es", value = "TC: n.a. (No puede resistir)")
+    @Localize(locale = "pt_BR", value = "TC: n.a. (No puede resistir)")
     static String NOT_APPLICABLE_TITLE;
     @Localize("CR: 6 (Resist Rarely)")
     @Localize(locale = "de", value = "SBP: 6 (selten)")
@@ -161,6 +162,7 @@ public enum SelfControlRoll {
     @Localize(locale = "de", value = "Keine benötigt")
     @Localize(locale = "ru", value = "Не требуется")
     @Localize(locale = "es", value = "No se requiere")
+    @Localize(locale = "pt_BR", value = "Não requerido")
     static String NONE_REQUIRED_TITLE;
 
     static {
