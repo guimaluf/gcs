@@ -4,10 +4,10 @@
 	<property name="module.version" value="4.12.0"/>
 	<property name="app.name" value="GURPS Character Sheet"/>
     <property name="exe.name" value="gcs"/>
-	<property name="target.version" value="12"/>
+	<property name="target.version" value="8"/>
 	<property name="build.dir" value="antbuild"/>
     <property name="dist.dir" value="dist"/>
-	<property name="modules.dir" value="../java_modules"/>
+	<property name="modules.dir" value="./build/java_modules"/>
 	<tstamp>
 		<format property="module.version.long" pattern="${module.version}.yyyyMMddHHmmss"/>
 	</tstamp>
@@ -94,14 +94,14 @@
     </target>
 
 	<target name="deps">
-		<ant dir="../org.apache.commons.logging" target="build" inheritall="false"/>
-		<ant dir="../org.apache.fontbox" target="build" inheritall="false"/>
-		<ant dir="../org.apache.pdfbox" target="build" inheritall="false"/>
-		<ant dir="../gnu.trove" target="build" inheritall="false"/>
-		<ant dir="../com.lowagie.text" target="build" inheritall="false"/>
-		<ant dir="../toolkit" target="build" inheritall="false"/>
+		<ant dir="./build/org.apache.commons.logging" target="build" inheritall="false"/>
+		<ant dir="./build/org.apache.fontbox" target="build" inheritall="false"/>
+		<ant dir="./build/org.apache.pdfbox" target="build" inheritall="false"/>
+		<ant dir="./build/gnu.trove" target="build" inheritall="false"/>
+		<ant dir="./build/com.lowagie.text" target="build" inheritall="false"/>
+		<ant dir="./build/toolkit" target="build" inheritall="false"/>
 	</target>
-    
+
     <target name="bundle" depends="deps,build">
         <symlink if:true="${platform.mac}" action="delete" link="${dist.root}/Applications"/>
         <delete dir="${build.dir}"/>
@@ -146,14 +146,14 @@
         </exec>
 
         <copy todir="${app.root}/Library">
-            <fileset dir="../gcs_library/Library"/>
+            <fileset dir="./build/gcs_library/Library"/>
         </copy>
         <symlink if:true="${platform.mac}" resource="/Applications" link="${dist.root}/Applications"/>
 
         <delete if:true="${platform.mac}" file="${disk.image.name}.dmg"/>
         <delete if:true="${platform.linux}" file="gcs-${module.version}.tgz"/>
         <delete if:true="${platform.windows}" file="gcs-${module.version}.zip"/>
-        
+
         <exec if:true="${platform.mac}" executable="du" output="${build.dir}/du.output">
             <arg value="-sm"/>
             <arg value="${dist.root}"/>
@@ -194,56 +194,56 @@
     </target>
 
 	<target name="clone-deps">
-		<exec executable="git" dir="..">
+		<exec executable="git" dir="./build/">
 			<arg value="clone"/>
 			<arg value="https://github.com/richardwilkes/org.apache.commons.logging"/>
 		</exec>
-		<exec executable="git" dir="..">
+		<exec executable="git" dir="./build/">
 			<arg value="clone"/>
 			<arg value="https://github.com/richardwilkes/org.apache.fontbox"/>
 		</exec>
-		<exec executable="git" dir="..">
+		<exec executable="git" dir="./build/">
 			<arg value="clone"/>
 			<arg value="https://github.com/richardwilkes/org.apache.pdfbox"/>
 		</exec>
-		<exec executable="git" dir="..">
+		<exec executable="git" dir="./build/">
 			<arg value="clone"/>
 			<arg value="https://github.com/richardwilkes/gnu.trove"/>
 		</exec>
-		<exec executable="git" dir="..">
+		<exec executable="git" dir="./build/">
 			<arg value="clone"/>
 			<arg value="https://github.com/richardwilkes/com.lowagie.text"/>
 		</exec>
-		<exec executable="git" dir="..">
+		<exec executable="git" dir="./build/">
 			<arg value="clone"/>
 			<arg value="https://github.com/richardwilkes/toolkit"/>
 		</exec>
-		<exec executable="git" dir="..">
+		<exec executable="git" dir="./build/">
 			<arg value="clone"/>
 			<arg value="https://github.com/richardwilkes/gcs_library"/>
 		</exec>
 	</target>
 
 	<target name="pull">
-		<exec executable="git" dir="../org.apache.commons.logging">
+		<exec executable="git" dir="./build/org.apache.commons.logging">
 			<arg value="pull"/>
 		</exec>
-		<exec executable="git" dir="../org.apache.fontbox">
+		<exec executable="git" dir="./build/org.apache.fontbox">
 			<arg value="pull"/>
 		</exec>
-		<exec executable="git" dir="../org.apache.pdfbox">
+		<exec executable="git" dir="./build/org.apache.pdfbox">
 			<arg value="pull"/>
 		</exec>
-		<exec executable="git" dir="../gnu.trove">
+		<exec executable="git" dir="./build/gnu.trove">
 			<arg value="pull"/>
 		</exec>
-		<exec executable="git" dir="../com.lowagie.text">
+		<exec executable="git" dir="./build/com.lowagie.text">
 			<arg value="pull"/>
 		</exec>
-		<exec executable="git" dir="../toolkit">
+		<exec executable="git" dir="./build/toolkit">
 			<arg value="pull"/>
 		</exec>
-		<exec executable="git" dir="../gcs_library">
+		<exec executable="git" dir="./build/gcs_library">
 			<arg value="pull"/>
 		</exec>
 		<exec executable="git">
